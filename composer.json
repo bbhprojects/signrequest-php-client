@@ -1,7 +1,7 @@
 {
-    "name": "bbhprojects/signrequest-php-client",
+    "name": "marshmallow/signrequest-client",
     "version": "1.0.0",
-    "description": "Official PHP client for SignRequest.com (https://signrequest.com)",
+    "description": "Forked official PHP client for SignRequest.com (https://signrequest.com)",
     "keywords": [
         "signrequest",
         "php",
@@ -16,8 +16,12 @@
             "homepage": "https://signrequest.com/"
         },
         {
+            "name": "Stef van Esch",
+            "homepage": "https://marshmallow.dev/"
+        },
+        {
             "name": "Gerard van Beijeren",
-            "homepage": "https://www.bbh-projects/com/"
+            "homepage": "https://www.bbh-projects.com/"
         }
     ],
     "require": {
