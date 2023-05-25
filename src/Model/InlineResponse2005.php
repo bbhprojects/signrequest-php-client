@@ -328,7 +328,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
      *
      * @return boolean
      */
-    public function offsetExists($offset):bool
+    public function offsetExists($offset)
     {
         return isset($this->container[$offset]);
     }

@@ -1055,7 +1055,7 @@ class Document implements ModelInterface, ArrayAccess
      *
      * @return bool
      */
-    public function getApiUsed()
+    public function getApiUsed():bool
     {
         return $this->container['api_used'];
     }
@@ -1180,7 +1180,7 @@ class Document implements ModelInterface, ArrayAccess
      *
      * @return bool
      */
-    public function getSandbox()
+    public function getSandbox():bool
     {
         return $this->container['sandbox'];
     }
@@ -1228,7 +1228,7 @@ class Document implements ModelInterface, ArrayAccess
      *
      * @return bool
      */
-    public function getProcessing()
+    public function getProcessing():bool
     {
         return $this->container['processing'];
     }
@@ -1253,7 +1253,7 @@ class Document implements ModelInterface, ArrayAccess
      *
      * @return boolean
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset):bool
     {
         return isset($this->container[$offset]);
     }
@@ -1265,7 +1265,7 @@ class Document implements ModelInterface, ArrayAccess
      *
      * @return mixed
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset):mixed
     {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
     }
@@ -1278,7 +1278,7 @@ class Document implements ModelInterface, ArrayAccess
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value):void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -1294,7 +1294,7 @@ class Document implements ModelInterface, ArrayAccess
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset):void
     {
         unset($this->container[$offset]);
     }

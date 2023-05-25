@@ -1,6 +1,6 @@
 {
     "name": "bbhprojects/signrequest-php-client",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Forked official PHP client for SignRequest.com (https://signrequest.com)",
     "keywords": [
         "signrequest",
